@@ -1,8 +1,13 @@
+import { Routes } from '@/components/router';
+import { Provider } from 'react-redux';
+
+import { store } from './redux/store';
+
 function App() {
   return (
-    <div className='container'>
-      <h1>Store</h1>
-    </div>
+    <Provider store={store}>
+      <Routes />
+    </Provider>
   );
 }
 

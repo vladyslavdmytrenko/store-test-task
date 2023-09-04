@@ -1,0 +1,12 @@
+.product_header_cell {
+
+  &_icon {
+    height: 16px;
+  }
+  
+  &__can_sort {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

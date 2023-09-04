@@ -2,6 +2,7 @@
   "name": "store",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vladyslavdmytrenko.github.io/store-test-task/",
   "type": "module",
   "scripts": {
     "dev": "vite",

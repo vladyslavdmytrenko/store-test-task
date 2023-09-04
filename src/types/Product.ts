@@ -22,6 +22,13 @@ export type ProductResponse = {
 export type CreateProduct = {
   title: string;
   author: string;
-  date: number;
+  date: string;
   rate: number;
 };
+
+export type ProductUrlParams = {
+  q?: string;
+  category?: string;
+};
+
+export type ProductCategories = string[];

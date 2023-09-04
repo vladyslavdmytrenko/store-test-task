@@ -1,5 +1,6 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore, ThunkMiddleware } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
+
 import { productAPI } from './api/productAPI';
 
 const APIS = [productAPI];
@@ -20,7 +21,7 @@ const middlewares = APIS.map(({ middleware }) => middleware);
 export const store = configureStore({
   reducer: reducers,
   middleware: getDefaultMiddleware =>
-    getDefaultMiddleware().concat(middlewares),
+    getDefaultMiddleware().concat(middlewares as ThunkMiddleware[]),
   devTools: import.meta.env.DEV,
 });
 

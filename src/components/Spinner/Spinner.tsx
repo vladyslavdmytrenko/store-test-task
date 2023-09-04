@@ -1,6 +1,8 @@
+import { FC } from 'react';
+
 interface SpinnerProps {}
 
-export const Spinner: React.FC<SpinnerProps> = () => {
+export const Spinner: FC<SpinnerProps> = () => {
   return (
     <div className='d-flex justify-content-center'>
       <div className='spinner-border' role='status'>
